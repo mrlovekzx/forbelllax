@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ตั๋วเข้าหัวใจ</title>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section class="ticket hero" aria-label="ตั๋วหัวใจ">
+    <div class="main">
+      <span class="tag">ADMIT ONE</span>
+      <h1 id="headline"></h1>
+      <div class="row">
+        <div><label>ผู้ถือตั๋ว</label><strong id="to"></strong></div>
+        <div><label>ออกตั๋วโดย</label><strong id="from"></strong></div>
+        <div><label>เริ่มใช้ได้ตั้งแต่</label><strong id="since"></strong></div>
+      </div>
+      <div class="row">
+        <div><label>ที่นั่ง</label><strong id="seat"></strong></div>
+        <div><label>ประตู</label><strong id="gate"></strong></div>
+      </div>
+    </div>
+    <div class="stub">
+      <div class="bars" aria-hidden="true"></div>
+      <div><div class="big" id="days">0</div><small>วันที่อยู่ด้วยกัน</small></div>
+    </div>
+  </section>
+
+  <div class="sec">
+    <div><h2>คูปองพิเศษ</h2><p>แตะ “ใช้เลย” ได้ทุกเมื่อ เดี๋ยวจัดให้</p></div>
+    <div class="count" id="count"></div>
+  </div>
+  <div class="list" id="list"></div>
+  <p class="foot">ตั๋วใบนี้ไม่มีวันหมดอายุ</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

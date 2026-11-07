@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>หลังบ้าน</title>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section id="login" class="panel">
+    <h2>เข้าหลังบ้าน</h2>
+    <div class="field"><label for="pw">รหัสผ่าน</label><input id="pw" type="password" autocomplete="current-password"></div>
+    <button class="use" id="go">เข้าสู่ระบบ</button>
+    <p class="msg" id="loginMsg" role="status"></p>
+  </section>
+
+  <div id="panel" hidden>
+    <section class="panel">
+      <h2>ข้อความบนตั๋ว</h2>
+      <div class="grid">
+        <div class="field wide"><label for="headline">หัวข้อใหญ่</label><input id="headline" maxlength="60"></div>
+        <div class="field"><label for="to">ผู้ถือตั๋ว</label><input id="to" maxlength="30"></div>
+        <div class="field"><label for="from">ออกตั๋วโดย</label><input id="from" maxlength="30"></div>
+        <div class="field"><label for="since">เริ่มใช้ได้ตั้งแต่</label><input id="since" maxlength="30"></div>
+        <div class="field"><label for="seat">ที่นั่ง</label><input id="seat" maxlength="40"></div>
+        <div class="field"><label for="gate">ประตู</label><input id="gate" maxlength="40"></div>
+        <div class="field"><label for="startDate">วันที่เริ่มคบกัน</label><input id="startDate" type="date"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="sec" style="margin:0 0 12px"><h2>คูปอง</h2><button class="ghost" id="add" style="margin:0">+ เพิ่มคูปอง</button></div>
+      <div id="rows"></div>
+    </section>
+
+    <div class="savebar">
+      <button class="use" id="save">บันทึก</button>
+      <a href="/" target="_blank" class="ghost" style="text-decoration:none;margin:0">ดูหน้าเว็บ</a>
+      <span class="msg" id="msg" role="status"></span>
+    </div>
+  </div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
